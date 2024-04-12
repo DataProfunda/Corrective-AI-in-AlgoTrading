@@ -102,7 +102,7 @@ class ProfundaEnv:
                 temp_df[symbol] = self.raw_data['c']
                 temp_df[symbol + '_vol'] = self.raw_data['volume']
                 
-                print(temp_df.head())
+                #print(temp_df.head())
                 
                 self.data = pd.merge(self.data, temp_df, how='outer', left_index=True, right_index=True)
                               
